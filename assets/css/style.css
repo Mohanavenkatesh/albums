@@ -74,8 +74,10 @@ body {
   background-color:#f0f8f1;
 }
 
-.bg-green{
-  background-color: #627A6E;
+.logo{
+  height: 50px; /* Adjust to your actual logo size */
+  width: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 main {

@@ -9,6 +9,37 @@
 
 
 
+  let scrollTimeout;
+  let currentLogo = '';
+
+  function switchLogo(newSrc) {
+    const $img = $(".header-section.text-white .brand-logo > a > img");
+    if ($img.attr("src") !== newSrc) {
+      $img.attr("src", newSrc);
+      currentLogo = newSrc;
+    }
+  }
+
+  $(window).on('scroll', function () {
+    if (scrollTimeout) return;
+
+    scrollTimeout = setTimeout(function () {
+      const scrollTop = $(window).scrollTop();
+
+      if (scrollTop > 100) {
+        $('.sticky-header').addClass('stuck');
+        switchLogo("assets/images/logo/logo_1.png");
+      } else {
+        $('.sticky-header').removeClass('stuck');
+        switchLogo("assets/images/logo/logo_2.png");
+      }
+
+      scrollTimeout = null;
+    }, 100); // Throttling
+  });
+
+
+
 
 (function($) {
   "use strict";
@@ -16,21 +47,21 @@
 
   // back to top - start
   // --------------------------------------------------
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 200) {
-  //     $('#backtotop:hidden').stop(true, true).fadeIn();
-  //   } else {
-  //     $('#backtotop').stop(true, true).fadeOut();
-  //   }
-  // });
-  // $(function() {
-  //   $("#scroll").on('click', function() {
-  //     $("html,body").animate({
-  //       scrollTop: $("#thetop").offset().top
-  //     }, "slow");
-  //     return false
-  //   })
-  // });
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+      $('#backtotop:hidden').stop(true, true).fadeIn();
+    } else {
+      $('#backtotop').stop(true, true).fadeOut();
+    }
+  });
+  $(function() {
+    $("#scroll").on('click', function() {
+      $("html,body").animate({
+        scrollTop: $("#thetop").offset().top
+      }, "slow");
+      return false
+    })
+  });
   // back to top - end
   // --------------------------------------------------
 
@@ -78,53 +109,47 @@
 
   // sticky header - start
   // --------------------------------------------------
-  let scrollTimeout;
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 300) {
+      $('.sticky-header').addClass("stuck")
+    } else {
+      $('.sticky-header').removeClass("stuck")
+    }
+  });
 
   $(window).on('scroll', function () {
-    if (scrollTimeout) return;
-  
-    scrollTimeout = setTimeout(function () {
-      var scrollTop = $(window).scrollTop();
-  
-      if (scrollTop > 300) {
-        $('.sticky-header').addClass('stuck');
-        $(".header-section.text-white .brand-logo > a > img").attr("src", "assets/images/logo/logo_1.png");
-      } else {
-        $('.sticky-header').removeClass('stuck');
-        $(".header-section.text-white .brand-logo > a > img").attr("src", "assets/images/logo/logo_2.png");
-      }
-  
-      scrollTimeout = null;
-    }, 100); // runs every 100ms
+    if ($(this).scrollTop() > 300) {
+      $(".header-section.text-white .brand-logo > a > img").attr("src", "assets/images/logo/logo_1.png");
+    } else {
+      $(".header-section.text-white .brand-logo > a > img").attr("src", "assets/images/logo/logo_2.png");
+    }
   });
-  
-  
   // sticky header - end
   // --------------------------------------------------
 
 
   // hanging header - start
   // --------------------------------------------------
-  // $(window).on('scroll', function () {
-  //   if ($(this).scrollTop() > 100) {
-  //     $('.hanging-header').addClass("active")
-  //   } else {
-  //     $('.hanging-header').removeClass("active")
-  //   }
-  // });
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 300) {
+      $('.hanging-header').addClass("active")
+    } else {
+      $('.hanging-header').removeClass("active")
+    }
+  });
   // hanging header - end
   // --------------------------------------------------
 
 
   // secondary header - start
   // --------------------------------------------------
-  // $(window).on('scroll', function () {
-  //   if ($(this).scrollTop() > 100) {
-  //     $('.secondary-header').addClass("active")
-  //   } else {
-  //     $('.secondary-header').removeClass("active")
-  //   }
-  // });
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 300) {
+      $('.secondary-header').addClass("active")
+    } else {
+      $('.secondary-header').removeClass("active")
+    }
+  });
   // secondary header - end
   // --------------------------------------------------
 
