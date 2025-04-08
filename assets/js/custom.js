@@ -79,7 +79,7 @@
   // sticky header - start
   // --------------------------------------------------
   $(window).on('scroll', function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 100) {
       $('.sticky-header').addClass("stuck")
     } else {
       $('.sticky-header').removeClass("stuck")
@@ -87,7 +87,7 @@
   });
 
   $(window).on('scroll', function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 100) {
       $(".header-section.text-white .brand-logo > a > img").attr("src", "assets/images/logo/logo_1.png");
     } else {
       $(".header-section.text-white .brand-logo > a > img").attr("src", "assets/images/logo/logo_2.png");
