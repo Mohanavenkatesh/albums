@@ -7853,9 +7853,9 @@ button {
     margin-bottom: 20px;
   }
 
-  /* .sticky-header {
+  .sticky-header {
     padding: 13.5px 0px;
-  } */
+  }
 
   .header-section .main-menu>ul>.menu-item-has-child .submenu {
     min-width: 200px;
@@ -10226,9 +10226,9 @@ button {
     max-width: 80px;
   }
 
-  /* .sticky-header {
+  .sticky-header {
     padding: 18px 0px !important;
-  } */
+  }
 
   .header-section .mobile-menu-btns {
     padding: 11px 0px;
@@ -10527,9 +10527,9 @@ button {
     padding: 20px;
   }
 
-  /* .home-portfolio-3 .sticky-header .menu-btn {
+  .home-portfolio-3 .sticky-header .menu-btn {
     margin: 25px auto 0px;
-  } */
+  }
 
   .home-portfolio-3 {
     padding-top: 160px;
@@ -11717,9 +11717,9 @@ button {
     padding: 6px 0px;
   }
 
-  /* .sticky-header {
+  .sticky-header {
     padding: 22px 0px !important;
-  } */
+  }
 
   /* header - end */
   /* footer - start */
