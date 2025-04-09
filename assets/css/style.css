@@ -65,7 +65,7 @@ body {
   font-style: normal;
   padding-top: 150px;
   color: #434343;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   background-color: #ffffff;
   text-rendering: optimizelegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -709,7 +709,7 @@ strong, span, small, label, i {
   font-weight: 500;
   line-height: 45px;
   padding: 0px 30px;
-  border-radius: 0px;
+  border-radius: 15px;
   position: relative;
   text-align: center;
   font-family: "Poppins", sans-serif;

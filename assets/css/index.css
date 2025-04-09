@@ -26,141 +26,143 @@
     transition: all 0.3s ease-in-out;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-  
+
     /* Glossy gradient background */
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.25),
-      rgba(255, 255, 255, 0.05),
-      rgba(0, 0, 0, 0.3)
-    );
-    backdrop-filter: blur(3px); /* Optional glass-like touch */
-  }
-
-  .portfolio-fullimage.add-effect::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0%;
-  height: 90%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease-in-out;
-  border-radius: 20px;
-
-  /* Glossy glass-like background */
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.126),
-    rgba(255, 255, 255, 0.05),
-    rgba(0, 0, 0, 0.3)
-  );
-  backdrop-filter: blur(8px);
-  pointer-events: none;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05),
+            rgba(0, 0, 0, 0.3));
+    backdrop-filter: blur(3px);
+    /* Optional glass-like touch */
 }
 
-/* FAQ SECTION  */
-/* Glossy FAQ Background */
-.glossy-faq-bg {
-    background: linear-gradient(145deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 0;
-    position: relative;
-    overflow: hidden;
-    padding: 40px 0;
-}
-
-/* Glossy Border Effect */
-.glossy-faq-border {
-    position: relative;
-    height: 1px;
-    border: none !important;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        rgba(255,255,255,0.3) 20%, 
-        rgba(255,255,255,0.7) 50%, 
-        rgba(255,255,255,0.3) 80%, 
-        transparent 100%);
-    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.2);
-    margin: 30px 0;
-}
-
-/* Optional: Add pseudo-elements for extra glossy effects */
-.glossy-faq-border::before,
-.glossy-faq-border::after {
-    content: '';
+.portfolio-fullimage.add-effect::before {
+    content: "";
     position: absolute;
-    top: -1px;
-    width: 30%;
-    height: 2px;
-    background: linear-gradient(90deg, 
-        rgba(255,255,255,0.8) 0%, 
-        rgba(255,255,255,0) 100%);
-    filter: blur(1px);
-}
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 90%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
 
-.glossy-faq-border::before {
-    left: 0;
-}
-
-.glossy-faq-border::after {
-    right: 0;
-    background: linear-gradient(90deg, 
-        rgba(255,255,255,0) 0%, 
-        rgba(255,255,255,0.8) 100%);
-}
-
-/* Optional: Add subtle animation */
-.glossy-faq-border {
-    animation: borderGlow 3s infinite alternate;
-}
-
-@keyframes borderGlow {
-    0% {
-        opacity: 0.7;
-    }
-    100% {
-        opacity: 1;
-        box-shadow: 0 1px 15px rgba(255, 255, 255, 0.3);
-    }
-}
-
-/* For the container - adds depth */
-.faq-container {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    padding: 60px 20px;
-    position: relative;
-}
-
-/* Optional: Add glossy corner accents */
-.faq-container::before,
-.faq-container::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 5px;
-    filter: blur(1px);
+    /* Glossy glass-like background */
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.126),
+            rgba(255, 255, 255, 0.05),
+            rgba(0, 0, 0, 0.3));
+    backdrop-filter: blur(8px);
     pointer-events: none;
 }
 
-.faq-container::before {
-    top: 20px;
-    left: 20px;
-    border-right: none;
-    border-bottom: none;
-}
 
-.faq-container::after {
-    bottom: 20px;
-    right: 20px;
-    border-left: none;
-    border-top: none;
-}
+/* Why Choise Us */
 
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  }
+  
+
+
+/* FAQ SECTION  */
+/* Glossy Section Background */
+.glossy-faq-bg {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* FAQ Card Style */
+  .accordion-item {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  /* Accordion Button */
+  .accordion-button {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px !important;
+    font-weight: 600;
+    color: #0d1b2a;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Active Button State */
+  .accordion-button:not(.collapsed) {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.06);
+    color: #000;
+  }
+  
+  /* Accordion Body */
+  .accordion-body {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 20px;
+    padding: 1rem;
+    color: #111;
+  }
+  
+  /* Remove Outline on Focus */
+  .accordion-button:focus,
+  .accordion-button:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  /* Optional Glossy Divider */
+  .glossy-faq-border {
+    height: 2px;
+    margin: 30px 0;
+    background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.5),
+      transparent);
+    border-radius: 2px;
+    filter: blur(0.8px);
+    animation: borderGlow 3s infinite alternate;
+  }
+  
+  /* Glossy Animation */
+  @keyframes borderGlow {
+    0% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+      box-shadow: 0 1px 15px rgba(255, 255, 255, 0.3);
+    }
+  }
+  
 /* why-choose-section */
 
 .why-choose-section {
@@ -240,11 +242,9 @@
     position: fixed;
     padding: 23.5px 0px;
     margin: 0px 20px 0px 20px;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.85) 0%,
-      rgba(255, 255, 255, 0.65) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.85) 0%,
+            rgba(255, 255, 255, 0.65) 100%);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -252,48 +252,44 @@
     animation: fadeInDown 0.5s ease-in-out;
     transition: all 0.3s ease;
     border-radius: 20px;
-  }
+}
 
-  .card.bg-light {
-    background: rgba(255, 255, 255, 0.15); /* translucent glassy white */
-    backdrop-filter: blur(12px); /* blur effect */
+.card.bg-light {
+    background: rgba(255, 255, 255, 0.15);
+    /* translucent glassy white */
+    backdrop-filter: blur(12px);
+    /* blur effect */
     -webkit-backdrop-filter: blur(12px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card.bg-light:hover {
+}
+
+.card.bg-light:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-  }
+}
 
 
-  footer {
+footer {
     margin: 0 20px 20px 20px;
     padding: 200px 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.85) 0%,
-      rgba(255, 255, 255, 0.65) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.85) 0%,
+            rgba(255, 255, 255, 0.65) 100%);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     transition: all 0.3s ease;
-  }
-  
-  footer a {
+}
+
+footer a {
     transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     color: #007bff;
-  }
-  
-
-
-
+}
