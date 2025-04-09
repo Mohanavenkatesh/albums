@@ -61,53 +61,104 @@
 }
 
 /* FAQ SECTION  */
-
-.accordion-button {
-    background: linear-gradient(145deg, #ffffff, #e6e9f0);
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #333;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.accordion-button:not(.collapsed) {
-    background: linear-gradient(145deg, #e0e5ec, #ffffff);
-    color: #000;
-    box-shadow: inset 2px 2px 8px #d1d9e6, inset -2px -2px 8px #fff;
-}
-
-.accordion-button:hover {
-    box-shadow: 0 0 15px rgba(0, 140, 255, 0.2);
-}
-
-.accordion-body {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    color: #444;
-    margin-bottom: 10px;
-}
-
-ul {
-    padding-left: 1.5rem;
-}
-
-.faq-glass {
-    background: rgba(255, 255, 255, 0.25);
+/* Glossy FAQ Background */
+.glossy-faq-bg {
+    background: linear-gradient(145deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%);
     backdrop-filter: blur(12px);
-    border-radius: 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    padding: 30px;
-    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
 }
 
-.accordion-item {
-    border: none;
-    background: transparent;
+/* Glossy Border Effect */
+.glossy-faq-border {
+    position: relative;
+    height: 1px;
+    border: none !important;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(255,255,255,0.3) 20%, 
+        rgba(255,255,255,0.7) 50%, 
+        rgba(255,255,255,0.3) 80%, 
+        transparent 100%);
+    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.2);
+    margin: 30px 0;
+}
+
+/* Optional: Add pseudo-elements for extra glossy effects */
+.glossy-faq-border::before,
+.glossy-faq-border::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    width: 30%;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        rgba(255,255,255,0.8) 0%, 
+        rgba(255,255,255,0) 100%);
+    filter: blur(1px);
+}
+
+.glossy-faq-border::before {
+    left: 0;
+}
+
+.glossy-faq-border::after {
+    right: 0;
+    background: linear-gradient(90deg, 
+        rgba(255,255,255,0) 0%, 
+        rgba(255,255,255,0.8) 100%);
+}
+
+/* Optional: Add subtle animation */
+.glossy-faq-border {
+    animation: borderGlow 3s infinite alternate;
+}
+
+@keyframes borderGlow {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+        box-shadow: 0 1px 15px rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* For the container - adds depth */
+.faq-container {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 60px 20px;
+    position: relative;
+}
+
+/* Optional: Add glossy corner accents */
+.faq-container::before,
+.faq-container::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px;
+    filter: blur(1px);
+    pointer-events: none;
+}
+
+.faq-container::before {
+    top: 20px;
+    left: 20px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.faq-container::after {
+    bottom: 20px;
+    right: 20px;
+    border-left: none;
+    border-top: none;
 }
 
 /* why-choose-section */
@@ -203,6 +254,22 @@ ul {
     border-radius: 20px;
   }
 
+  .card.bg-light {
+    background: rgba(255, 255, 255, 0.15); /* translucent glassy white */
+    backdrop-filter: blur(12px); /* blur effect */
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card.bg-light:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  }
+
+
   footer {
     margin: 0 20px 20px 20px;
     padding: 200px 0;
@@ -227,5 +294,6 @@ ul {
     color: #007bff;
   }
   
-  
+
+
 

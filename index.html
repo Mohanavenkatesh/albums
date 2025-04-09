@@ -30,9 +30,9 @@
 
 	<!-- custon css for index -->
 	<link rel="stylesheet" href="./assets/css/index.css">
-	<style>
 
-	</style>
+	<!-- fontawsome cdn link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 
@@ -518,7 +518,7 @@
 
 		<!-- slider-section - start
 			================================================== -->
-	
+
 		<section id="slider-section" class="slider-section clearfix">
 			<div id="agency-default-carousel" class="agency-default-carousel owl-carousel owl-theme">
 
@@ -808,31 +808,25 @@
 		<!-- About us Start -->
 		<section class="py-5">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<span class="text-muted">Our Story</span>
-						<h2 class="display-5 fw-bold">About Us</h2>
-						<p class="lead">Welcome to AlbumsbyZG – Premium Photo Album Manufacturers for Professionals</p>
-						<a class="btn btn-primary mt-2" href="">Learn more</a>
+				<div class="row gx-4 align-items-center justify-content-between">
+					<div class="col-md-5 order-2 order-md-1">
+						<div class="mt-5 mt-md-0">
+							<span class="text-muted">Our Story</span>
+							<h2 class="display-5 fw-bold">About Us</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud.</p>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><a
+								class="btn btn-primary mt-2" href="#">Learn more</a>
+						</div>
 					</div>
-					<div class="col-md-6 offset-md-1">
-						<p class="lead">At AlbumsbyZG, we specialize in crafting high-quality photo albums for
-							professional photographers, studios, and businesses. As a leading photo album manufacturer
-							in India, we combine expert craftsmanship, premium materials, and state-of-the-art
-							technology to deliver luxury photo albums that preserve memories in the most elegant way
-							possible.
-							Whether you’re a wedding photographer, baby photographer, or a corporate studio, we offer a
-							wide range of customizable photo albums designed to suit every occasion and style.
-						</p>
-					</div>
+					<div class="col-md-5 order-1 order-md-2"><img class="img-fluid rounded-3"
+							src="https://freefrontend.dev/assets/square.png"></div>
 				</div>
 			</div>
 		</section>
 		<!-- About us End -->
-
-
-
-
 		<section class="why-choose-section">
 			<h2>Why Choose Albums by ZG?</h2>
 			<div class="card-container">
@@ -861,8 +855,6 @@
 				</div>
 			</div>
 		</section>
-
-
 
 		<!-- team-section - start
 			================================================== -->
@@ -1177,140 +1169,135 @@
 		<!-- partners-section - end
 			================================================== -->
 		<!-- FAQ Section Start -->
-		<div class="container my-5 faq-glass">
-			<h2 class="text-center mb-4">Frequently Asked Questions (FAQs)</h2>
-			<div class="accordion" id="faqAccordion">
-
-				<!-- FAQ 1 -->
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingOne">
-						<button class="accordion-button" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							1. Who can order from AlbumsbyZG?
-						</button>
-					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-						data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							AlbumsbyZG is a B2B photo album manufacturing company catering to professional
-							photographers, photo studios, print labs, creative agencies, and resellers. Whether you’re a
-							solo photographer or a large-scale studio, you can place bulk or recurring orders with us.
+		<!-- FAQ section -->
+		<div class="container glossy-faq-container py-5">
+			<div class="row">
+				<h1 class="text-center glossy-faq-title">FAQ</h1>
+				<div class="accordion accordion-flush glossy-accordion rounded py-5" id="accordionFlushExample">
+					<!-- FAQ Item 1 -->
+					<div class="accordion-item glossy-accordion-item my-4">
+						<h2 class="accordion-header">
+							<button class="glossy-accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo" aria-expanded="false"
+								aria-controls="flush-collapseTwo">
+								<div class="d-flex justify-content-between w-100 align-items-center">
+									<h5 class="text-start mb-0">Are Toothpaste Bits good for sensitive teeth?</h5>
+									<i class="fa-sharp fa-solid fa-chevron-down glossy-accordion-icon"></i>
+								</div>
+							</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body glossy-accordion-body">
+								<p>Yes, our Bits are safe for sensitive teeth. We use Nano-hydroxyapatite in our
+									Fluoride-Free formula, a mineral that's been proven to strengthen and remineralize enamel and help fight
+									sensitivity.</p>
+								<p>Read the nHAP Study here and read more information about it here.</p>
+								<p>We also recommend talking to your dentist about Nano-hydroxyapatite or when making
+									any changes to your oral care routine.</p>
+							</div>
+						</div>
+					</div>
+		
+					<!-- FAQ Item 2 -->
+					<div class="accordion-item glossy-accordion-item my-4">
+						<h2 class="accordion-header">
+							<button class="glossy-accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree" aria-expanded="false"
+								aria-controls="flush-collapseThree">
+								<div class="d-flex justify-content-between w-100 align-items-center">
+									<h5 class="text-start mb-0">How do subscriptions work</h5>
+									<i class="fa-sharp fa-solid fa-chevron-down glossy-accordion-icon"></i>
+								</div>
+							</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body glossy-accordion-body">
+								<p>With subscriptions, we send you all 4 months of Toothpaste Bits at once in our
+									refillable glass jar for $32. Shipments after that will be sent every 4 months for $32 after your initial
+									purchase, so you don't have to worry about running out of Bits.</p>
+								<p>Our refill pouch will disintegrate in home compost within 12-16 weeks. Or if you
+									don't have a home compost, they can be dropped in the compost bin in a number of stores—Starbucks and
+									Whole Foods are the most common.</p>
+								<p>We will send you an email reminder before your order is processed so you can cancel,
+									postpone or even change the flavor of your upcoming Bits before they ship.</p>
+							</div>
+						</div>
+					</div>
+		
+					<!-- FAQ Item 3 -->
+					<div class="accordion-item glossy-accordion-item my-4">
+						<h2 class="accordion-header">
+							<button class="glossy-accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour" aria-expanded="false"
+								aria-controls="flush-collapseFour">
+								<div class="d-flex justify-content-between w-100 align-items-center">
+									<h5 class="text-start mb-0">Can I purchase just the refill pouches first?</h5>
+									<i class="fa-sharp fa-solid fa-chevron-down glossy-accordion-icon"></i>
+								</div>
+							</button>
+						</h2>
+						<div id="flush-collapseFour" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body glossy-accordion-body">
+								<p>Unfortunately, we do not sell refill pouches on their own. However we do offer a 4
+									month subscription – it costs $32 which breaks down to only $8 per month.</p>
+								<p>The Bits come in a 4oz glass jar in the first shipment and then in compostable
+									refill pouches after that, as our tablets are sensitive to humidity and heat.</p>
+								<p>Being as eco-friendly as possible is super important to us, but there are a few
+									things that are equally important, such as the safety of our customers (and their pets!).</p>
+							</div>
+						</div>
+					</div>
+		
+					<!-- FAQ Item 4 -->
+					<div class="accordion-item glossy-accordion-item my-4">
+						<h2 class="accordion-header">
+							<button class="glossy-accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFive" aria-expanded="false"
+								aria-controls="flush-collapseFive">
+								<div class="d-flex justify-content-between w-100 align-items-center">
+									<h5 class="text-start mb-0">What is the shelf life?</h5>
+									<i class="fa-sharp fa-solid fa-chevron-down glossy-accordion-icon"></i>
+								</div>
+							</button>
+						</h2>
+						<div id="flush-collapseFive" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body glossy-accordion-body">
+								<p>With proper storage in a cool and dry place our nHap Bits have a shelf life of 2
+									years and our Fluoride Bits have a shelf life of 1 1/2 years from the manufacturing date (MFT).</p>
+							</div>
+						</div>
+					</div>
+		
+					<!-- FAQ Item 5 -->
+					<div class="accordion-item glossy-accordion-item my-4">
+						<h2 class="accordion-header">
+							<button class="glossy-accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne" aria-expanded="false"
+								aria-controls="flush-collapseOne">
+								<div class="d-flex justify-content-between w-100 align-items-center">
+									<h5 class="text-start mb-0">How do I use Toothpaste Bits?</h5>
+									<i class="fa-sharp fa-solid fa-chevron-down glossy-accordion-icon"></i>
+								</div>
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body glossy-accordion-body">
+								<p>It's easy:</p>
+								<ol class="glossy-ordered-list">
+									<li>Put a perfectly portioned Bit into your mouth.</li>
+									<li>Chew the Bit gently until it forms a soft powder</li>
+									<li>Brush with a wet toothbrush for 2 minutes, it will foam up - just like what you're used to.</li>
+									<li>Spit, smile and repeat twice a day to make your dentist proud and our Earth happy.</li>
+								</ol>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<!-- FAQ 2 -->
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingTwo">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							2. Do you offer bulk order discounts?
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-						data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Yes! We specialize in bulk photo album orders and provide competitive pricing for studios
-							and resellers. The more you order, the more you save. Contact our team for custom quotes on
-							high-volume purchases.
-						</div>
-					</div>
-				</div>
-
-				<!-- FAQ 3 -->
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingThree">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							3. Can I customize the albums with my brand logo or design?
-						</button>
-					</h2>
-					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-						data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Absolutely. We offer custom photo album manufacturing with white-label branding, logo
-							embossing, custom packaging, UV printing, and more. Your brand identity will shine through
-							every product.
-						</div>
-					</div>
-				</div>
-
-				<!-- FAQ 4 -->
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingFour">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-							4. What types of photo albums do you offer?
-						</button>
-					</h2>
-					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-						data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							We manufacture a wide variety of premium photo albums, including:
-							<ul>
-								<li>Wedding Albums</li>
-								<li>Baby Albums</li>
-								<li>Engagement Albums</li>
-								<li>Corporate Albums</li>
-								<li>Travel & Lifestyle Albums</li>
-							</ul>
-							Each album is fully customizable in terms of size, cover material, layout, and paper type.
-						</div>
-					</div>
-				</div>
-
-				<!-- FAQ 5 -->
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingFive">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-							5. How do I place an order?
-						</button>
-					</h2>
-					<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-						data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							You can place your order directly through our eCommerce website by selecting the album type,
-							customizing the details, and uploading your designs. For large or custom bulk orders, you
-							can reach out to our support team.
-						</div>
-					</div>
-				</div>
-
-				<!-- FAQ 6 -->
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingSix">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-							6. Do you offer delivery across India?
-						</button>
-					</h2>
-					<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-						data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Yes! We provide pan-India delivery with fast and secure shipping options. Our logistics
-							partners ensure your albums reach you safely and on time.
-						</div>
-					</div>
-				</div>
-
-				<!-- FAQ 7 -->
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingSeven">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-							7. What is the turnaround time for album production?
-						</button>
-					</h2>
-					<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-						data-bs-parent="#faqAccordion">
-						<div class="accordion-body">
-							Our standard turnaround time is **5 to 10 business days** depending on the type of album and
-							customization. We’ll always keep you updated on your order progress.
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 
@@ -1371,9 +1358,11 @@
 		<div class="container">
 			<div class="row pt-4 mb-4 mb-lg-5">
 				<div class="col-12 col-lg-3 pe-lg-0 mb-4 mb-lg-0">
-					<img alt="Free Frontend Logo" class="img-fluid mb-3" height="" src="./assets/images/logo/albums logo-2.png" width="150">
-					<p class="small text-muted mb-3">Sign up for our newsletter to get the latest updates on features and releases.</p>
-					
+					<img alt="Free Frontend Logo" class="img-fluid mb-3" height=""
+						src="./assets/images/logo/albums logo-2.png" width="150">
+					<p class="small text-muted mb-3">Sign up for our newsletter to get the latest updates on features
+						and releases.</p>
+
 				</div>
 				<div class="col-12 col-lg-2"></div>
 				<div class="col-6 col-lg-2">
@@ -1409,16 +1398,31 @@
 				<div class="col-12 col-lg-2 small mt-4 mt-lg-0">
 					<ul class="list-unstyled">
 						<li class="nav-item">
-							<a class="text-dark text-decoration-none" href=""><svg class="bi bi-pinterest text-primary me-2" fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
-							<path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"></path></svg> Pinterest</a>
+							<a class="text-dark text-decoration-none" href=""><svg
+									class="bi bi-pinterest text-primary me-2" fill="currentColor" height="18"
+									viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z">
+									</path>
+								</svg> Pinterest</a>
 						</li>
 						<li class="nav-item">
-							<a class="text-dark text-decoration-none" href=""><svg class="bi bi-twitter text-primary me-2" fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
-							<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg> Twitter</a>
+							<a class="text-dark text-decoration-none" href=""><svg
+									class="bi bi-twitter text-primary me-2" fill="currentColor" height="18"
+									viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+									</path>
+								</svg> Twitter</a>
 						</li>
 						<li class="nav-item">
-							<a class="text-dark text-decoration-none" href=""><svg class="bi bi-facebook text-primary me-2" fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
-							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg> Facebook</a>
+							<a class="text-dark text-decoration-none" href=""><svg
+									class="bi bi-facebook text-primary me-2" fill="currentColor" height="18"
+									viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+									</path>
+								</svg> Facebook</a>
 						</li>
 					</ul>
 				</div>
@@ -1429,7 +1433,8 @@
 					© 2023 FreeFrontend.dev. All rights reserved.
 				</div>
 				<div class="small">
-					<a class="d-block d-lg-inline text-muted ms-lg-2 mb-2 mb-lg-0" href="">Privacy Policy</a> <a class="d-block d-lg-inline text-muted ms-lg-2" href="">Terms of Service</a>
+					<a class="d-block d-lg-inline text-muted ms-lg-2 mb-2 mb-lg-0" href="">Privacy Policy</a> <a
+						class="d-block d-lg-inline text-muted ms-lg-2" href="">Terms of Service</a>
 				</div>
 			</div>
 		</div>
