@@ -1622,7 +1622,7 @@ button {
   height: auto;
   z-index: 999;
   position: absolute;
-  /* padding: 28.5px 0px; */
+  padding: 28.5px 0px;
   padding: 0;
 }
 
