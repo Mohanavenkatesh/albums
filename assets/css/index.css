@@ -1,12 +1,12 @@
 /* banner */
 .child-image img {
-    transition: transform 0.2s ease-out;
-    will-change: transform;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
 }
 
 .child-image img {
-    transition: transform 0.2s ease-out;
-    will-change: transform;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
 }
 
 /* SLIDERS */
@@ -15,64 +15,64 @@
 /* portfolio */
 
 .blog-fullimage.add-effect::before {
-    top: 50%;
-    left: 50%;
-    width: 0%;
-    height: 85%;
-    z-index: 1;
-    content: "";
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 85%;
+  z-index: 1;
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
 
-    /* Glossy gradient background */
-    background: linear-gradient(135deg,
-            rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.05),
-            rgba(0, 0, 0, 0.3));
-    backdrop-filter: blur(3px);
-    /* Optional glass-like touch */
+  /* Glossy gradient background */
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05),
+      rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(3px);
+  /* Optional glass-like touch */
 }
 
 .portfolio-fullimage.add-effect::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0%;
-    height: 90%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease-in-out;
-    border-radius: 20px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 90%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
 
-    /* Glossy glass-like background */
-    background: linear-gradient(135deg,
-            rgba(255, 255, 255, 0.126),
-            rgba(255, 255, 255, 0.05),
-            rgba(0, 0, 0, 0.3));
-    backdrop-filter: blur(8px);
-    pointer-events: none;
+  /* Glossy glass-like background */
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.126),
+      rgba(255, 255, 255, 0.05),
+      rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(8px);
+  pointer-events: none;
 }
 
 
 /* Why Choise Us */
 
 .glass-card {
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
-    border-radius: 20px;
-    padding: 25px;
-    text-align: left;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -80,216 +80,216 @@
 /* FAQ SECTION  */
 /* Glossy Section Background */
 .glossy-faq-bg {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
-    padding: 40px 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 /* FAQ Card Style */
 .accordion-item {
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 /* Accordion Button */
 .accordion-button {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 20px !important;
-    font-weight: 600;
-    color: #0d1b2a;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    border: none;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px !important;
+  font-weight: 600;
+  color: #0d1b2a;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 /* Active Button State */
 .accordion-button:not(.collapsed) {
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.06);
-    color: #000;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.06);
+  color: #000;
 }
 
 /* Accordion Body */
 .accordion-body {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 20px;
-    padding: 1rem;
-    color: #111;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 20px;
+  padding: 1rem;
+  color: #111;
 }
 
 /* Remove Outline on Focus */
 .accordion-button:focus,
 .accordion-button:focus-visible {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 /* Optional Glossy Divider */
 .glossy-faq-border {
-    height: 2px;
-    margin: 30px 0;
-    background: linear-gradient(90deg,
-            transparent,
-            rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0.9),
-            rgba(255, 255, 255, 0.5),
-            transparent);
-    border-radius: 2px;
-    filter: blur(0.8px);
-    animation: borderGlow 3s infinite alternate;
+  height: 2px;
+  margin: 30px 0;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.5),
+      transparent);
+  border-radius: 2px;
+  filter: blur(0.8px);
+  animation: borderGlow 3s infinite alternate;
 }
 
 /* Glossy Animation */
 @keyframes borderGlow {
-    0% {
-        opacity: 0.6;
-    }
+  0% {
+    opacity: 0.6;
+  }
 
-    100% {
-        opacity: 1;
-        box-shadow: 0 1px 15px rgba(255, 255, 255, 0.3);
-    }
+  100% {
+    opacity: 1;
+    box-shadow: 0 1px 15px rgba(255, 255, 255, 0.3);
+  }
 }
 
 /* why-choose-section */
 
 .why-choose-section {
-    /* background: #f5f5f5; */
-    padding: 60px 20px;
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
+  /* background: #f5f5f5; */
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .why-choose-section h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: #333;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
 }
 
 /* CARD SECTION  */
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .glossy-card {
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
-    border-radius: 20px;
-    padding: 25px;
-    text-align: left;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glossy-card::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(135deg,
-            rgba(255, 255, 255, 0.2) 0%,
-            rgba(255, 255, 255, 0.05) 40%,
-            rgba(0, 0, 0, 0.05) 100%);
-    pointer-events: none;
-    transform: rotate(25deg);
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.05) 40%,
+      rgba(0, 0, 0, 0.05) 100%);
+  pointer-events: none;
+  transform: rotate(25deg);
 }
 
 .glossy-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
 .glossy-card h3 {
-    font-size: 1.1rem;
-    color: #111;
-    margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #111;
+  margin-bottom: 10px;
 }
 
 .glossy-card p {
-    font-size: 0.95rem;
-    color: #444;
-    line-height: 1.5;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
 }
 
 
 
 
 .sticky-header.stuck {
-    top: 8px;
-    left: 0px;
-    right: 0px;
-    z-index: 999;
-    position: fixed;
-    padding: 23.5px 0px;
-    margin: 0px 20px 0px 20px;
-    background: linear-gradient(to bottom,
-            rgba(255, 255, 255, 0.85) 0%,
-            rgba(255, 255, 255, 0.65) 100%);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    animation: fadeInDown 0.5s ease-in-out;
-    transition: all 0.3s ease;
-    border-radius: 20px;
+  top: 8px;
+  left: 0px;
+  right: 0px;
+  z-index: 999;
+  position: fixed;
+  padding: 23.5px 0px;
+  margin: 0px 20px 0px 20px;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.65) 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeInDown 0.5s ease-in-out;
+  transition: all 0.3s ease;
+  border-radius: 20px;
 }
 
 .card.bg-light {
-    background: rgba(255, 255, 255, 0.15);
-    /* translucent glassy white */
-    backdrop-filter: blur(12px);
-    /* blur effect */
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.15);
+  /* translucent glassy white */
+  backdrop-filter: blur(12px);
+  /* blur effect */
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card.bg-light:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
 footer {
-    margin: 0 20px 20px 20px;
-    padding: 200px 0;
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    transition: all 0.3s ease;
+  margin: 0 20px 20px 20px;
+  padding: 200px 0;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
 footer a {
-    transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
 
@@ -302,7 +302,7 @@ footer a:hover {
 
 @media (max-width: 576px) {
   #slider-section {
-    margin: 10px 13px 10px 10px;
+    margin: 10px 11px 10px 10px;
   }
 
   .custom-border-radius-1 {
@@ -315,120 +315,456 @@ footer a:hover {
 
 
 .glossy-image {
-    position: relative;
-    display: inline-block;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .glossy-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glossy-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
       rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    );
-    transform: skewX(-20deg);
-    pointer-events: none;
-    animation: shine 2s infinite linear;
-  }
-  
-  @keyframes shine {
-    0% {
-      left: -75%;
-    }
-    100% {
-      left: 125%;
-    }
-  }
-  
-  .glosy-testimonial {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 24px;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-    padding: 3rem 2rem;
-    margin: 40px 0;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .glosy-testimonial:hover {
-    transform: scale(1.02);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
-  }
-  
-  /* Glossy image inside testimonials */
-  .glosy-testimonial .person-image img {
-    border-radius: 16px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Shine effect on image */
-  .glosy-testimonial .person-image {
-    position: relative;
-  }
-  
-  .glosy-testimonial .person-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
+      rgba(255, 255, 255, 0.1) 100%);
+  transform: skewX(-20deg);
+  pointer-events: none;
+  animation: shine 2s infinite linear;
+}
+
+@keyframes shine {
+  0% {
     left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
+  }
+
+  100% {
+    left: 125%;
+  }
+}
+
+.glosy-testimonial {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  padding: 3rem 2rem;
+  margin: 40px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glosy-testimonial:hover {
+  transform: scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* Glossy image inside testimonials */
+.glosy-testimonial .person-image img {
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Shine effect on image */
+.glosy-testimonial .person-image {
+  position: relative;
+}
+
+.glosy-testimonial .person-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
       rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    transform: skewX(-20deg);
-    animation: shine 2.5s infinite linear;
-    z-index: 2;
-    pointer-events: none;
-  }
-  
-  /* Optional quote style */
-  .glosy-testimonial p {
-    font-style: italic;
-    font-size: 1.1rem;
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-20deg);
+  animation: shine 2.5s infinite linear;
+  z-index: 2;
+  pointer-events: none;
+}
 
-  }
-  
-  /* Animation keyframes */
-  @keyframes shine {
-    0% {
-      left: -75%;
-    }
-    100% {
-      left: 125%;
-    }
+/* Optional quote style */
+.glosy-testimonial p {
+  font-style: italic;
+  font-size: 1.1rem;
+
+}
+
+/* Animation keyframes */
+@keyframes shine {
+  0% {
+    left: -75%;
   }
 
-  @keyframes floatImage {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
+  100% {
+    left: 125%;
   }
-  
-  .floating-img {
-    animation: floatImage 4s ease-in-out infinite;
-    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
   }
-  
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-img {
+  animation: floatImage 4s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ----------------------------------- */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* padding: 20px; */
+}
+
+.carousel {
+  /* padding: 100px 300px; */
+  /* margin: 0px 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  flex-wrap: nowrap;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  /* padding: 10px; */
+}
+
+/* Glossy Carousel Item */
+.carousel-item {
+  min-width: 280px;
+  max-width: 360px;
+  height: 480px;
+  margin: 0 15px;
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  color: #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  opacity: 0.4;
+  transform: scale(0.8);
+  /* filter: blur(1px); */
+  transition: all 0.5s ease;
+  padding: 20px;
+  text-align: center;
+  box-shadow:
+    inset 0 1px 3px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 3px rgba(0, 0, 0, 0.4),
+    0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glossy shine overlay */
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      transparent 100%);
+  transform: rotate(25deg);
+  pointer-events: none;
+}
+
+.carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 10px;
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+  background: linear-gradient(145deg, #333, #1f1f1f);
+  box-shadow:
+    inset 0 1px 3px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 3px rgba(0, 0, 0, 0.4),
+    0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.carousel-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  background: transparent;
+  color: #cfcfcf;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav.prev {
+  left: 10px;
+}
+
+.nav.next {
+  right: 10px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #444;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.active-dot {
+  background-color: #aaa;
+}
+
+/* 🌐 Responsive Styling */
+@media (max-width: 768px) {
+  .carousel {
+    padding: 60px 10px;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel-item {
+    flex-shrink: 0;
+    width: 80%;
+    height: 400px;
+    margin: 0 10px;
+    scroll-snap-align: center;
+  }
+
+  .nav {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    width: 90%;
+    height: 360px;
+    padding: 15px;
+  }
+
+  .carousel-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-item p {
+    font-size: 0.9rem;
+  }
+}
+
+.carousel {
+  position: relative;
+  overflow: visible;
+  /* allow track to slide */
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  /* optional: fixed width or responsive */
+  width: 250px;
+  /* or whatever suits your design */
+  margin-right: 16px;
+  /* use spacing inside items if needed */
+}
+
+.carousel-item.active {
+  outline: 2px solid #333;
+  /* just to visually indicate the active one */
+}
+
+.nav {
+  cursor: pointer;
+  user-select: none;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active-dot {
+  background: #333;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  margin-right: 16px;
+  /* optional spacing */
+}
+
+.carousel-item.active {
+  outline: 2px solid #333;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active-dot {
+  background: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add in your main stylesheet */
+
+.glossy-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  pointer-events: none;
+  transform: skewX(-20deg);
+  animation: glossy-slide 1s ease-in-out;
+  z-index: 5;
+  backdrop-filter: blur(3px);
+  border-radius: 16px;
+}
+
+@keyframes glossy-slide {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+.item {
+  position: relative;
+  overflow: hidden;
+}
