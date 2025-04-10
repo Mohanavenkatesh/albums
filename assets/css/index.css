@@ -300,13 +300,17 @@ footer a:hover {
     margin: 100px;
 } */
 
-.custom-border-radius-1{
- border-radius: 20px;
+@media (max-width: 576px) {
+  #slider-section {
+    margin: 10px 13px 10px 10px;
+  }
+
+  .custom-border-radius-1 {
+    border-radius: 20px;
+  }
 }
 
-#slider-section {
-  margin:10px 14px 0px 0px;
-}
+
 
 
 
