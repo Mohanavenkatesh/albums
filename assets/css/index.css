@@ -294,11 +294,15 @@ footer a:hover {
 
 
 
-/* -------- some extracs ------------ */
+/* ---------- some extracs ------------ */
 
 /* .custom-padding{
     margin: 100px;
 } */
+
+.custom-border-radius-1{
+ border-radius: 20px;
+}
 
 .glossy-image {
     position: relative;
@@ -400,19 +404,6 @@ footer a:hover {
       left: 125%;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   @keyframes floatImage {
     0% {
