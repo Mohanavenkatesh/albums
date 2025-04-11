@@ -847,54 +847,31 @@
 
 		<section>
 			<div class="section-title text-center mb-5">
-				<h2 class="title-text mb-15">Our Product Categories</h2>
-				<p class="mb-5">Design is intelligence made visible</p>
+			  <h2 class="title-text mb-15">Our Product Categories</h2>
+			  <p class="mb-5">Design is intelligence made visible</p>
 			</div>
-
+		  
 			<div class="carousel-wrapper">
-				<button class="nav prev">&#10094;</button>
-
-				<div class="carousel">
-					<div class="carousel-track">
-						<div class="carousel-item">
-							<div class="carousel-content">
-								<h2>1. Wedding Photo Albums</h2>
-								<p>Celebrate love stories with our handcrafted wedding albums designed to make every
-									memory timeless.</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="carousel-content">
-								<h2>2. Baby Photo Albums</h2>
-								<p>Capture the joy of childhood with our adorable and premium baby albums.</p>
-							</div>
-						</div>
-						<div class="carousel-item active">
-							<div class="carousel-content">
-								<h2>3. Engagement Albums</h2>
-								<p>Elegant and sophisticated, our engagement photo albums offer customized layouts.</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="carousel-content">
-								<h2>4. Travel and Lifestyle Albums</h2>
-								<p>Bring your travel stories and adventures to life with our stylish lifestyle photo
-									books.</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<div class="carousel-content">
-								<h2>5. Corporate Albums</h2>
-								<p>Our professional photo albums are perfect for events, portfolios, and branding.</p>
-							</div>
-						</div>
-					</div>
+			  <button class="nav prev">&#10094;</button>
+		  
+			  <div class="carousel">
+				<div class="carousel-track">
+				  <div class="carousel-item"><div class="carousel-content"><h2>1. Wedding Photo Albums</h2><p>Celebrate love stories with our handcrafted wedding albums designed to make every memory timeless.</p></div></div>
+				  <div class="carousel-item"><div class="carousel-content"><h2>2. Baby Photo Albums</h2><p>Capture the joy of childhood with our adorable and premium baby albums.</p></div></div>
+				  <div class="carousel-item active"><div class="carousel-content"><h2>3. Engagement Albums</h2><p>Elegant and sophisticated, our engagement photo albums offer customized layouts.</p></div></div>
+				  <div class="carousel-item"><div class="carousel-content"><h2>4. Travel and Lifestyle Albums</h2><p>Bring your travel stories and adventures to life with our stylish lifestyle photo books.</p></div></div>
+				  <div class="carousel-item"><div class="carousel-content"><h2>5. Corporate Albums</h2><p>Our professional photo albums are perfect for events, portfolios, and branding.</p></div></div>
 				</div>
-
-				<button class="nav next">&#10095;</button>
-				<div class="dots"></div>
+			  </div>
+		  
+			  <button class="nav next">&#10095;</button>
+			  <div class="dots"></div>
 			</div>
-		</section>
+		  </section>
+		  
+
+
+
 
 		<!-- Other Cat end -->
 
@@ -1383,85 +1360,87 @@
 		integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
 		crossorigin="anonymous"></script>
 
-	<script>
-		window.addEventListener('DOMContentLoaded', () => {
-			const track = document.querySelector('.carousel-track');
-			const carousel = document.querySelector('.carousel');
-			const carouselItems = document.querySelectorAll('.carousel-item');
-			const prevBtn = document.querySelector('.nav.prev');
-			const nextBtn = document.querySelector('.nav.next');
-			const dotsContainer = document.querySelector('.dots');
+		<script>
+ window.addEventListener('DOMContentLoaded', () => {
+      const track = document.querySelector('.carousel-track');
+      const carousel = document.querySelector('.carousel');
+      const carouselItems = document.querySelectorAll('.carousel-item');
+      const prevBtn = document.querySelector('.nav.prev');
+      const nextBtn = document.querySelector('.nav.next');
+      const dotsContainer = document.querySelector('.dots');
 
-			if (!track || !carousel || !carouselItems.length || !prevBtn || !nextBtn || !dotsContainer) {
-				console.error("Carousel: Missing required elements.");
-				return;
-			}
+      let currentIndex = Array.from(carouselItems).findIndex(item => item.classList.contains('active'));
+      if (currentIndex === -1) currentIndex = 0;
 
-			let currentIndex = Array.from(carouselItems).findIndex(item => item.classList.contains('active'));
-			if (currentIndex === -1) currentIndex = 0;
+      // Create dots
+      dotsContainer.innerHTML = '';
+      carouselItems.forEach((_, i) => {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (i === currentIndex) dot.classList.add('active-dot');
+        dotsContainer.appendChild(dot);
+      });
+      const dots = dotsContainer.querySelectorAll('.dot');
 
-			// Create dots
-			dotsContainer.innerHTML = '';
-			carouselItems.forEach((_, i) => {
-				const dot = document.createElement('span');
-				dot.classList.add('dot');
-				if (i === currentIndex) dot.classList.add('active-dot');
-				dotsContainer.appendChild(dot);
-			});
-			const dots = dotsContainer.querySelectorAll('.dot');
+      function centerItem(index) {
+        const item = carouselItems[index];
+        const itemRect = item.getBoundingClientRect();
+        const carouselRect = carousel.getBoundingClientRect();
 
-			function centerItem(index) {
-				const item = carouselItems[index];
-				const itemOffsetLeft = item.offsetLeft;
-				const itemWidth = item.offsetWidth;
-				const carouselWidth = carousel.offsetWidth;
+        const itemCenter = itemRect.left + itemRect.width / 2;
+        const carouselCenter = carouselRect.left + carouselRect.width / 2;
+        const scrollOffset = itemCenter - carouselCenter;
 
-				const scrollTo = itemOffsetLeft - (carouselWidth / 2 - itemWidth / 2);
-				track.style.transform = `translateX(-${scrollTo}px)`;
-			}
+        const currentTransform = getComputedStyle(track).transform;
+        let currentX = 0;
+        if (currentTransform !== 'none') {
+          const matrix = new WebKitCSSMatrix(currentTransform);
+          currentX = matrix.m41;
+        }
 
-			function updateCarousel(index) {
-				carouselItems.forEach((item, i) => {
-					item.classList.toggle('active', i === index);
-					dots[i]?.classList.toggle('active-dot', i === index);
-				});
-				requestAnimationFrame(() => centerItem(index));
-			}
+        const newTransform = currentX - scrollOffset;
+        track.style.transform = `translateX(${newTransform}px)`;
+      }
 
-			prevBtn.addEventListener('click', () => {
-				currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-				updateCarousel(currentIndex);
-			});
+      function updateCarousel(index) {
+        carouselItems.forEach((item, i) => {
+          item.classList.toggle('active', i === index);
+          dots[i]?.classList.toggle('active-dot', i === index);
+        });
+        requestAnimationFrame(() => centerItem(index));
+      }
 
-			nextBtn.addEventListener('click', () => {
-				currentIndex = (currentIndex + 1) % carouselItems.length;
-				updateCarousel(currentIndex);
-			});
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        updateCarousel(currentIndex);
+      });
 
-			dots.forEach((dot, i) => {
-				dot.addEventListener('click', () => {
-					currentIndex = i;
-					updateCarousel(currentIndex);
-				});
-			});
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        updateCarousel(currentIndex);
+      });
 
-			carouselItems.forEach((item, i) => {
-				item.addEventListener('click', () => {
-					currentIndex = i;
-					updateCarousel(currentIndex);
-				});
-			});
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          currentIndex = i;
+          updateCarousel(currentIndex);
+        });
+      });
 
-			updateCarousel(currentIndex);
-		});
+      carouselItems.forEach((item, i) => {
+        item.addEventListener('click', () => {
+          currentIndex = i;
+          updateCarousel(currentIndex);
+        });
+      });
+
+      updateCarousel(currentIndex);
+    });
+
+		  </script>
+		  
 
 
-
-
-
-
-		
-	</script>
 
 </body>
 
