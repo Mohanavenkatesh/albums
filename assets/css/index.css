@@ -533,6 +533,13 @@ footer a:hover {
     text-align: center;
   }
 
+  .mobile-small-img {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
   .slider-content {
     display: flex;
     flex-direction: column;
@@ -542,7 +549,25 @@ footer a:hover {
   .absolute-social-wrap {
     text-align: center;
   }
+
   /* .custom-border-radius-1 {
     border-radius: 20px;
   } */
+}
+
+
+
+/* Make image smaller and centered on small screens */
+.slider-img {
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .slider-img {
+    max-width: 100%;
+    margin: 0;
+  }
 }
