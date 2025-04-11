@@ -1,7 +1,7 @@
 /* Nav Start  ================================================ */
 
 .sticky-header.stuck {
-  top: 8px;
+  top: 0px;
   left: 0px;
   right: 0px;
   z-index: 999;
@@ -298,6 +298,7 @@
   background: #a6a6a6;
 }
 
+
 /* Our Product Categories end ================================================ */
 
 /* Why Choise Us Start ================================================*/
@@ -570,6 +571,8 @@ footer a:hover {
     max-width: 100%;
     margin: 0;
   }
+
+  
 }
 
 
